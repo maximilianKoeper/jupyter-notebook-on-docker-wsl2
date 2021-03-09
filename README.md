@@ -66,6 +66,8 @@ docker run -p 8888:8888 -v ~/docker/notebooks:/home/jovyan --name jupyter jupyte
 
 # Updating your jupyter notebook
 
+No data will be lost in this process if the container has been set up as shown above. You can check your ~/docker/notebooks folder, all of your notebooks should be there.
+
 ## Remove your existing container
 You can do this in the Docker desktop app, or you can type the following into your Linux shell:
 ```
