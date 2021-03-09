@@ -1,6 +1,8 @@
 # jupyter-notebook-on-docker-wsl2
 
-[Full instructions on installing docker with wsl2 on windows](https://docs.docker.com/docker-for-windows/wsl/)
+[Full instructions on installing docker with wsl2 on windows](https://docs.docker.com/docker-for-windows/wsl/)  
+- Virtualization must be activated in BIOS / UEFI
+- At least. 4 GB RAM is required (> 8GB recommended)
 
 ## Install wsl 2
 1. **Enable the required features**  
