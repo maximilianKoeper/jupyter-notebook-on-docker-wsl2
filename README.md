@@ -63,3 +63,22 @@ docker run -p 127.0.0.1:8888:8888 -v ~/docker/notebooks:/home/jovyan --name jupy
 docker run -p 8888:8888 -v ~/docker/notebooks:/home/jovyan --name jupyter jupyter/all-spark-notebook
 ```
 4. **Copy token from shell and open http://localhost:8888/ or http://127.0.0.1:8888/**
+
+# Updating your jupyter notebook
+
+## Remove your existing container
+You can do this in the Docker Desktop app or type the following in your Linux shell:
+```
+docker stop jupyter
+docker rm jupyter
+```
+The old image can be deleted in the Desktop App or with:  
+*The image_id is shown after the rm command*
+```
+docker rmi <image_id>
+```
+
+## Pull and run new version:
+```
+docker run -p 127.0.0.1:8888:8888 -v ~/docker/notebooks:/home/jovyan -e GRANT_SUDO=yes --user root --name jupyter jupyter/all-spark-notebook
+```
