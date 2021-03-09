@@ -67,7 +67,7 @@ docker run -p 8888:8888 -v ~/docker/notebooks:/home/jovyan --name jupyter jupyte
 # Updating your jupyter notebook
 
 ## Remove your existing container
-You can do this in the Docker Desktop app or type the following in your Linux shell:
+You can do this in the Docker desktop app, or you can type the following into your Linux shell:
 ```
 docker stop jupyter
 docker rm jupyter
