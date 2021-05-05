@@ -66,6 +66,15 @@ docker run -p 8888:8888 -v ~/docker/notebooks:/home/jovyan --name jupyter jupyte
 ```
 4. **Copy token from shell and open http://localhost:8888/ or http://127.0.0.1:8888/**
 
+## Jupyter notebook shell
+
+http://localhost:8888/lab --> Terminal 
+
+*example for iminuit*
+```
+pip install iminuit
+```
+
 # Updating your jupyter notebook
 
 No data will be lost in this process if the container has been set up as shown above. You can check your ~/docker/notebooks folder, all of your notebooks should be there.
